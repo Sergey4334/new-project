@@ -1,0 +1,1027 @@
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: montserrat-regular, sans-serif;
+  background: #fff;
+  width: 100%;
+  height: 100%; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  position: relative; }
+
+.container {
+  max-width: 1140px;
+  height: 100%;
+  position: relative;
+  margin: 0px auto;
+  width: 100%;
+  padding: 0px 15px; }
+
+input {
+  outline: none; }
+
+a {
+  text-decoration: none;
+  outline: none; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    list-style: none; }
+
+.header {
+  width: 100%;
+  min-height: 680px;
+  background: url("../images/bg-header.png") no-repeat center; }
+  .header .header-top {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .header .header-top .header-left {
+      position: relative; }
+      .header .header-top .header-left .header-nav {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 34px;
+        padding: 0px;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .header .header-top .header-left .header-nav li a {
+          color: #ffffff;
+          font-family: montserrat-regular, sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          padding-right: 27px; }
+        @media screen and (max-width: 780px) {
+          .header .header-top .header-left .header-nav li a {
+            display: block;
+            text-align: center;
+            padding: 9px 0px; } }
+        .header .header-top .header-left .header-nav li .logo {
+          color: #ffffff;
+          font-family: montserrat-bold, sans-serif;
+          font-size: 24px; }
+      @media screen and (max-width: 780px) {
+        .header .header-top .header-left .header-nav {
+          display: block;
+          text-align: center; } }
+  @media screen and (max-width: 780px) {
+    .header .header-top {
+      display: block;
+      text-align: center;
+      margin: 0px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      background: #ff4b64eb; } }
+  .header .header-title {
+    padding-top: 170px; }
+    .header .header-title .h1 {
+      color: #ffffff;
+      font-family: montserrat-medium, sans-serif;
+      text-align: center;
+      font-size: 72px;
+      font-weight: 500;
+      letter-spacing: 0.8px;
+      padding: 37px 10px;
+      white-space: nowrap; }
+    @media screen and (max-width: 1100px) {
+      .header .header-title .h1 {
+        font-size: 62px; } }
+    @media screen and (max-width: 980px) {
+      .header .header-title .h1 {
+        font-size: 52px;
+        padding: 30px 0px; } }
+    @media screen and (max-width: 780px) {
+      .header .header-title .h1 {
+        font-size: 42px;
+        padding: 30px 0px; } }
+    @media screen and (max-width: 780px) {
+      .header .header-title .h1 {
+        font-size: 32px;
+        padding: 30px 0px;
+        white-space: pre-wrap; } }
+    .header .header-title .title-bottom {
+      font-size: 30px;
+      font-weight: 400;
+      font-family: montserrat-regular, sans-serif;
+      letter-spacing: 0.75px;
+      color: #fff;
+      text-align: center; }
+    @media screen and (max-width: 780px) {
+      .header .header-title .title-bottom {
+        font-size: 25px; } }
+  .header .header-right {
+    margin-top: 30px; }
+    .header .header-right .login {
+      display: inline-block;
+      width: 120px;
+      height: 40px;
+      color: #ffffff;
+      font-family: montserrat-medium, sans-serif;
+      font-size: 16px;
+      line-height: 37px;
+      border: 1px solid #ffffff;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      text-align: center; }
+
+.form-top .form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-top: -27px;
+  /* Firefox 19+ */
+  /* Firefox 18- */ }
+  .form-top .form .input-text {
+    max-width: 336px;
+    width: 100%;
+    height: 55px;
+    text-indent: 23px;
+    border: 1px solid #e6e6e6; }
+  @media screen and (max-width: 1130px) {
+    .form-top .form .input-text {
+      max-width: 70%; } }
+  .form-top .form .date {
+    max-width: 186px;
+    text-indent: 33px;
+    border: 1px solid #e6e6e6;
+    width: 100%;
+    height: 55px; }
+  @media screen and (max-width: 1130px) {
+    .form-top .form .date {
+      max-width: 70%; } }
+  .form-top .form .search {
+    width: 120px;
+    height: 55px;
+    cursor: pointer;
+    background-color: #ff4b64;
+    color: #ffffff;
+    border: none;
+    color: #ffffff;
+    font-family: montserrat-regular, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; }
+  @media screen and (max-width: 1130px) {
+    .form-top .form .search {
+      width: 70%; } }
+  .form-top .form ::-webkit-input-placeholder {
+    color: #818181;
+    font-family: montserrat-regular, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.5px; }
+  .form-top .form ::-moz-placeholder {
+    color: #818181;
+    font-family: montserrat-regular, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.5px; }
+  .form-top .form :-moz-placeholder {
+    color: #818181;
+    font-family: montserrat-regular, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.5px; }
+  .form-top .form :-ms-input-placeholder {
+    color: #818181;
+    font-family: montserrat-regular, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.5px; }
+
+@media screen and (max-width: 1130px) {
+  .form-top .form {
+    margin-top: -109px; } }
+
+.flights {
+  width: 100%; }
+  .flights .flights-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 75px; }
+    .flights .flights-content .flights-title {
+      color: #484848;
+      font-family: montserrat-regular, sans-serif;
+      font-size: 30px;
+      font-weight: 400; }
+    @media screen and (max-width: 580px) {
+      .flights .flights-content .flights-title {
+        padding-bottom: 20px; } }
+    .flights .flights-content .flights-menu .menu-right {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .flights .flights-content .flights-menu .menu-right li a {
+        color: #484848;
+        font-family: montserrat-medium, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 0px 29px; }
+        .flights .flights-content .flights-menu .menu-right li a:last-child {
+          padding-right: 0px; }
+        .flights .flights-content .flights-menu .menu-right li a:hover {
+          color: #ff4b64; }
+        .flights .flights-content .flights-menu .menu-right li a:active {
+          color: #ff4b64; }
+        .flights .flights-content .flights-menu .menu-right li a:focus {
+          color: #ff4b64; }
+      @media screen and (max-width: 620px) {
+        .flights .flights-content .flights-menu .menu-right li a {
+          padding: 0px;
+          display: block;
+          margin: 8px 0px; } }
+    @media screen and (max-width: 620px) {
+      .flights .flights-content .flights-menu .menu-right {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+  @media screen and (max-width: 620px) {
+    .flights .flights-content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-top: 45px; } }
+  .flights .airline {
+    margin-top: 60px; }
+    .flights .airline .airline-title .airline-items {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      border-bottom: 1px solid #e6e6e6;
+      padding-bottom: 36px; }
+      .flights .airline .airline-title .airline-items .airline-price {
+        margin-right: 78px; }
+      @media screen and (max-width: 620px) {
+        .flights .airline .airline-title .airline-items .airline-price {
+          margin: 8px 0px; } }
+      .flights .airline .airline-title .airline-items .airline-text {
+        color: #484848;
+        font-family: montserrat-medium, sans-serif;
+        font-size: 16px; }
+      @media screen and (max-width: 620px) {
+        .flights .airline .airline-title .airline-items .airline-text {
+          margin: 8px 0px; } }
+      .flights .airline .airline-title .airline-items ul {
+        display: inherit; }
+        .flights .airline .airline-title .airline-items ul li {
+          color: #484848;
+          font-family: montserrat-medium, sans-serif;
+          font-size: 16px; }
+        @media screen and (max-width: 620px) {
+          .flights .airline .airline-title .airline-items ul li {
+            margin: 8px 0px; } }
+        .flights .airline .airline-title .airline-items ul li:nth-child(1) {
+          width: 125px;
+          margin-left: 57px; }
+        .flights .airline .airline-title .airline-items ul li:nth-child(2) {
+          width: 125px;
+          padding-left: 34px; }
+        .flights .airline .airline-title .airline-items ul li:nth-child(3) {
+          width: 125px;
+          padding-left: 82px; }
+        .flights .airline .airline-title .airline-items ul li:nth-child(4) {
+          width: 125px;
+          padding-left: 99px; }
+        @media screen and (max-width: 980px) {
+          .flights .airline .airline-title .airline-items ul li:nth-child(1) {
+            width: auto;
+            margin-left: 0px; }
+          .flights .airline .airline-title .airline-items ul li:nth-child(2) {
+            width: auto;
+            margin-left: 0px; }
+          .flights .airline .airline-title .airline-items ul li:nth-child(3) {
+            width: auto;
+            padding-left: 40px; }
+          .flights .airline .airline-title .airline-items ul li:nth-child(4) {
+            width: auto;
+            padding-left: 40px; } }
+        @media screen and (max-width: 980px) {
+          .flights .airline .airline-title .airline-items ul li:nth-child(3) {
+            padding-left: 0px; }
+          .flights .airline .airline-title .airline-items ul li:nth-child(4) {
+            padding-left: 0px; } }
+    @media screen and (max-width: 620px) {
+      .flights .airline .airline-title .airline-items {
+        display: block;
+        text-align: center; } }
+    .flights .airline .airline-title .airline-table {
+      margin-top: 51px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      border-bottom: 1px solid #e6e6e6;
+      padding-bottom: 44px;
+      text-align: center;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+      .flights .airline .airline-title .airline-table .airline-img {
+        display: inherit;
+        max-width: 155px;
+        width: 100%; }
+        .flights .airline .airline-title .airline-table .airline-img ul {
+          margin-left: 30px; }
+          .flights .airline .airline-title .airline-table .airline-img ul .airline-table-text {
+            color: #484848;
+            font-family: montserrat-regular, sans-serif;
+            font-size: 16px; }
+          .flights .airline .airline-title .airline-table .airline-img ul .airline-table-grey {
+            color: #9a9a9a;
+            font-family: montserrat-regular, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            padding-top: 10px; }
+        @media screen and (max-width: 890px) {
+          .flights .airline .airline-title .airline-table .airline-img ul {
+            margin-left: 0px;
+            margin-top: 15px; } }
+      @media screen and (max-width: 890px) {
+        .flights .airline .airline-title .airline-table .airline-img {
+          display: inline-block;
+          margin-bottom: 30px;
+          margin-left: 0px;
+          -webkit-box-flex: 1;
+          -webkit-flex-grow: 1;
+              -ms-flex-positive: 1;
+                  flex-grow: 1; } }
+      .flights .airline .airline-title .airline-table .airline-block-center {
+        display: inherit;
+        max-width: 560px;
+        width: 100%;
+        height: auto; }
+        .flights .airline .airline-title .airline-table .airline-block-center ul:nth-child(1) {
+          padding: 0px 50px 0px 9px; }
+        @media screen and (max-width: 620px) {
+          .flights .airline .airline-title .airline-table .airline-block-center ul:nth-child(1) {
+            padding: 0px 9px; } }
+        .flights .airline .airline-title .airline-table .airline-block-center ul:nth-child(2) {
+          padding: 0px 30px; }
+        @media screen and (max-width: 620px) {
+          .flights .airline .airline-title .airline-table .airline-block-center ul:nth-child(2) {
+            padding: 0px 9px; } }
+        .flights .airline .airline-title .airline-table .airline-block-center ul:nth-child(3) {
+          padding: 0px 55px; }
+        @media screen and (max-width: 620px) {
+          .flights .airline .airline-title .airline-table .airline-block-center ul:nth-child(3) {
+            padding: 0px 9px; } }
+        .flights .airline .airline-title .airline-table .airline-block-center ul:nth-child(4) {
+          padding: 0px 8px; }
+        .flights .airline .airline-title .airline-table .airline-block-center ul .airline-table-text {
+          color: #484848;
+          font-family: montserrat-regular, sans-serif;
+          font-size: 16px; }
+        .flights .airline .airline-title .airline-table .airline-block-center ul .airline-table-grey {
+          color: #9a9a9a;
+          font-family: montserrat-regular, sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          padding-top: 10px; }
+      @media screen and (max-width: 890px) {
+        .flights .airline .airline-title .airline-table .airline-block-center {
+          -webkit-box-flex: 1;
+          -webkit-flex-grow: 1;
+              -ms-flex-positive: 1;
+                  flex-grow: 1;
+          width: auto;
+          margin-bottom: 20px; } }
+    @media screen and (max-width: 890px) {
+      .flights .airline .airline-title .airline-table {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+    .flights .airline .airline-title .price-block .price-btn {
+      display: inline-block;
+      width: 120px;
+      height: 40px;
+      color: #ff4b64;
+      font-family: montserrat-medium, sans-serif;
+      font-size: 16px;
+      line-height: 37px;
+      border: 1px solid #ff4b64;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      text-align: center;
+      margin-right: -2px; }
+    @media screen and (max-width: 620px) {
+      .flights .airline .airline-title .price-block {
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1; } }
+    .flights .airline .airline-title .see-flights {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      margin-top: 43px; }
+      .flights .airline .airline-title .see-flights .seeall {
+        color: #484848;
+        font-family: montserrat-regular, sans-serif;
+        font-size: 16px; }
+    @media screen and (max-width: 1100px) {
+      .flights .airline .airline-title .see-flights {
+        position: relative;
+        width: 100%;
+        text-align: center; } }
+  @media screen and (max-width: 620px) {
+    .flights .airline {
+      margin-top: 30px; } }
+
+.hotels {
+  position: relative; }
+  .hotels .hotels-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 134px; }
+    .hotels .hotels-content .hotels-title {
+      color: #484848;
+      font-family: montserrat-regular, sans-serif;
+      font-size: 30px;
+      font-weight: 400; }
+    .hotels .hotels-content .hotels-menu .menu-right {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .hotels .hotels-content .hotels-menu .menu-right li a {
+        color: #484848;
+        font-family: montserrat-medium, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 0px 29px; }
+        .hotels .hotels-content .hotels-menu .menu-right li a:last-child {
+          padding-right: 0px; }
+        .hotels .hotels-content .hotels-menu .menu-right li a:hover {
+          color: #ff4b64; }
+        .hotels .hotels-content .hotels-menu .menu-right li a:active {
+          color: #ff4b64; }
+        .hotels .hotels-content .hotels-menu .menu-right li a:focus {
+          color: #ff4b64; }
+      @media screen and (max-width: 340px) {
+        .hotels .hotels-content .hotels-menu .menu-right li a {
+          padding: 0px 15px; } }
+  @media screen and (max-width: 1110px) {
+    .hotels .hotels-content {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  .hotels .hotels-portfolio {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-top: 29px; }
+    .hotels .hotels-portfolio .portfolio-item {
+      border: 1px solid #e6e6e6;
+      max-width: 350px;
+      margin-top: 30px; }
+      .hotels .hotels-portfolio .portfolio-item .portfolio-title {
+        color: #484848;
+        font-family: montserrat-medium, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        padding-top: 20px;
+        margin-left: 16px; }
+      .hotels .hotels-portfolio .portfolio-item .block-text-grey {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding-top: 20px;
+        margin-left: 16px; }
+        .hotels .hotels-portfolio .portfolio-item .block-text-grey .text-km {
+          color: #9a9a9a;
+          font-family: montserrat-regular, sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          margin-right: 11px; }
+      .hotels .hotels-portfolio .portfolio-item img {
+        width: 100%;
+        height: 200px; }
+      .hotels .hotels-portfolio .portfolio-item .price-block {
+        margin: 20px 0px 25px 15px; }
+        .hotels .hotels-portfolio .portfolio-item .price-block .price-btn {
+          display: inline-block;
+          width: 120px;
+          height: 40px;
+          color: #ff4b64;
+          font-family: montserrat-medium, sans-serif;
+          font-size: 16px;
+          line-height: 37px;
+          border: 1px solid #ff4b64;
+          -webkit-border-radius: 5px;
+                  border-radius: 5px;
+          text-align: center; }
+    @media screen and (max-width: 1110px) {
+      .hotels .hotels-portfolio .portfolio-item {
+        margin: 10px 15px; } }
+  @media screen and (max-width: 1110px) {
+    .hotels .hotels-portfolio {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  .hotels .see-flights {
+    margin-top: 40px;
+    position: absolute;
+    right: 0px; }
+    .hotels .see-flights .seeall {
+      color: #484848;
+      font-family: montserrat-regular, sans-serif;
+      font-size: 16px; }
+  @media screen and (max-width: 1100px) {
+    .hotels .see-flights {
+      position: relative;
+      margin-top: 20px;
+      width: 100%;
+      text-align: center; } }
+
+.atractions .atractions-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 132px; }
+  .atractions .atractions-content .atractions-title {
+    color: #484848;
+    font-family: montserrat-regular, sans-serif;
+    font-size: 30px;
+    font-weight: 400; }
+  @media screen and (max-width: 850px) {
+    .atractions .atractions-content .atractions-title {
+      margin-bottom: 10px; } }
+  .atractions .atractions-content .atractions-menu .menu-right {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .atractions .atractions-content .atractions-menu .menu-right li a {
+      color: #484848;
+      font-family: montserrat-medium, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 0px 27px; }
+      .atractions .atractions-content .atractions-menu .menu-right li a:last-child {
+        padding-right: 0px; }
+      .atractions .atractions-content .atractions-menu .menu-right li a:hover {
+        color: #ff4b64; }
+      .atractions .atractions-content .atractions-menu .menu-right li a:active {
+        color: #ff4b64; }
+      .atractions .atractions-content .atractions-menu .menu-right li a:focus {
+        color: #ff4b64; }
+    @media screen and (max-width: 850px) {
+      .atractions .atractions-content .atractions-menu .menu-right li a {
+        display: block;
+        padding: 8px 0px; } }
+  @media screen and (max-width: 850px) {
+    .atractions .atractions-content .atractions-menu .menu-right {
+      display: block; } }
+
+@media screen and (max-width: 850px) {
+  .atractions .atractions-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px; } }
+
+.atractions .atractions-portfolio {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-top: 59px;
+  position: relative; }
+  .atractions .atractions-portfolio .atractions-item .item-img {
+    position: relative;
+    max-width: 350px;
+    height: 525px; }
+  @media screen and (max-width: 1140px) {
+    .atractions .atractions-portfolio .atractions-item {
+      margin-bottom: 30px; } }
+  .atractions .atractions-portfolio .images-right .atractions-item-right {
+    position: relative;
+    max-width: 730px;
+    height: 247px; }
+  @media screen and (max-width: 780px) {
+    .atractions .atractions-portfolio .images-right .atractions-item-right {
+      height: auto; } }
+  .atractions .atractions-portfolio .images-right .atractions-item-bottom {
+    position: relative;
+    max-width: 730px;
+    height: 247px;
+    margin: 30px 0px 0px 0px; }
+  @media screen and (max-width: 780px) {
+    .atractions .atractions-portfolio .images-right .atractions-item-bottom {
+      height: auto;
+      margin: 20px 0px; } }
+
+@media screen and (max-width: 1140px) {
+  .atractions .atractions-portfolio {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+.atractions .atractions-text-center {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  top: 48.5%;
+  position: absolute;
+  font-family: montserrat-medium, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1.6px; }
+
+.atractions .atractions-portfolio-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .atractions .atractions-portfolio-bottom .images-bottom {
+    max-width: 350px;
+    height: 260px;
+    margin: 30px 0px;
+    position: relative; }
+    .atractions .atractions-portfolio-bottom .images-bottom:last-child {
+      margin-left: 0px; }
+  @media screen and (max-width: 1100px) {
+    .atractions .atractions-portfolio-bottom .images-bottom {
+      margin: 20px 17px; } }
+  @media screen and (max-width: 580px) {
+    .atractions .atractions-portfolio-bottom .images-bottom {
+      margin: 20px 0px;
+      height: auto; } }
+
+.atractions .see-flights {
+  margin-top: 12px;
+  position: absolute;
+  right: 2px; }
+  .atractions .see-flights .seeall {
+    color: #484848;
+    font-family: montserrat-regular, sans-serif;
+    font-size: 16px; }
+
+@media screen and (max-width: 1100px) {
+  .atractions .see-flights {
+    position: relative;
+    width: 100%;
+    text-align: center; } }
+
+@media screen and (max-width: 1100px) {
+  .atractions .atractions-portfolio {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .atractions .atractions-portfolio-bottom {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+.trips .trips-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 108px; }
+  .trips .trips-content .trips-title {
+    color: #484848;
+    font-family: montserrat-regular, sans-serif;
+    font-size: 30px;
+    font-weight: 400; }
+  .trips .trips-content .trips-menu .menu-right {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .trips .trips-content .trips-menu .menu-right li a {
+      color: #484848;
+      font-family: montserrat-medium, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 0px 29px; }
+      .trips .trips-content .trips-menu .menu-right li a:last-child {
+        padding-right: 0px; }
+      .trips .trips-content .trips-menu .menu-right li a:hover {
+        color: #ff4b64; }
+      .trips .trips-content .trips-menu .menu-right li a:active {
+        color: #ff4b64; }
+      .trips .trips-content .trips-menu .menu-right li a:focus {
+        color: #ff4b64; }
+    @media screen and (max-width: 340px) {
+      .trips .trips-content .trips-menu .menu-right li a {
+        padding: 0px 15px; } }
+
+@media screen and (max-width: 980px) {
+  .trips .trips-content {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+.trips .trips-article {
+  width: 100%;
+  position: relative;
+  margin-top: 64px; }
+  .trips .trips-article .article-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px; }
+    .trips .trips-article .article-item .block-article {
+      border: 1px solid #e6e6e6;
+      padding: 25px 42px 41px 30px; }
+      .trips .trips-article .article-item .block-article .article-title {
+        color: #484848;
+        font-family: montserrat-medium, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 30px; }
+      .trips .trips-article .article-item .block-article .article-text {
+        color: #484848;
+        font-family: montserrat-regular, sans-serif;
+        font-size: 16px;
+        font-weight: 400; }
+  @media screen and (max-width: 980px) {
+    .trips .trips-article .article-item {
+      max-width: 350px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin: 20px auto; } }
+
+.trips .see-flights {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  margin-top: 13px; }
+  .trips .see-flights .seeall {
+    color: #484848;
+    font-family: montserrat-regular, sans-serif;
+    font-size: 16px; }
+
+@media screen and (max-width: 1100px) {
+  .trips .see-flights {
+    position: relative;
+    width: 100%;
+    text-align: center; } }
+
+.empty {
+  height: 191px; }
+
+.footer {
+  min-height: 80px;
+  margin-top: -80px;
+  width: 100%;
+  background: #ffffff;
+  position: relative; }
+  .footer .block-footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .footer .block-footer .footer-block-item .footer-title {
+      color: #484848;
+      font-family: montserrat-regular, sans-serif;
+      font-size: 30px; }
+    .footer .block-footer .footer-block-item .footer-link {
+      margin-top: 52px; }
+      .footer .block-footer .footer-block-item .footer-link li {
+        margin-bottom: 26px; }
+        .footer .block-footer .footer-block-item .footer-link li a {
+          color: #484848;
+          font-family: montserrat-regular, sans-serif;
+          font-size: 16px; }
+        .footer .block-footer .footer-block-item .footer-link li .link-email {
+          color: #ff4b64; }
+  @media screen and (max-width: 680px) {
+    .footer .block-footer {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      text-align: center; } }
+
+/* Burgers menu */
+.burger {
+  display: none;
+  border: 0;
+  background: none;
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+  border-bottom: 4px solid #fff;
+  width: 28px;
+  transition: border-bottom 1s ease-in-out;
+  -webkit-transition: border-bottom 1s ease-in-out; }
+  .burger::-moz-focus-inner {
+    border: 0;
+    padding: 0; }
+  .burger:before {
+    content: "";
+    display: block;
+    border-bottom: 4px solid #fff;
+    width: 100%;
+    margin-bottom: 5px;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out; }
+  .burger:after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid #fff;
+    width: 100%;
+    margin-bottom: 5px;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out; }
+
+@media screen and (max-width: 780px) {
+  .burger {
+    display: inline-block;
+    z-index: 100;
+    position: absolute;
+    top: 25px; } }
+
+.burger-check {
+  display: none; }
+
+.burger-check:checked ~ .burger {
+  border-bottom: 4px solid transparent;
+  transition: border-bottom 0.8s ease-in-out;
+  -webkit-transition: border-bottom 0.8s ease-in-out; }
+  .burger-check:checked ~ .burger:before {
+    -ms-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+        transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out; }
+  .burger-check:checked ~ .burger:after {
+    -ms-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+        transform: rotate(405deg) translateY(-4px) translateX(-5px);
+    -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out; }
+
+.header-top {
+  -webkit-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out; }
+
+@media screen and (max-width: 780px) {
+  .header-top {
+    overflow: hidden;
+    height: 0; } }
+
+.burger-check:checked ~ .header-top {
+  height: 689px;
+  -webkit-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out; }
+
+/* End Burgers menu */

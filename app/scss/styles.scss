@@ -1,0 +1,1185 @@
+$m-regular: montserrat-regular, sans-serif;
+$m-italic: montserrat-italic, sans-serif;
+$m-light: montserrat-light, sans-serif;
+$m-bold: montserrat-bold, sans-serif;
+$m-medium: montserrat-medium, sans-serif;
+
+$global-red: #ff4b64;
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $m-regular;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.container {
+  max-width: 1140px;
+  height: 100%;
+  position: relative;
+  margin: 0px auto;
+  width: 100%;
+  padding: 0px 15px;
+}
+input {
+  outline: none;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+.header {
+  width: 100%;
+  min-height: 680px;
+  background: url("../images/bg-header.png") no-repeat center;
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .header-left {
+      position: relative;
+
+      .header-nav {
+        display: flex;
+        margin-top: 34px;
+        padding: 0px;
+        align-items: center;
+
+        li {
+
+          a {
+            color: #ffffff;
+            font-family: $m-regular;
+            font-size: 16px;
+            font-weight: 400;
+            padding-right: 27px;
+          }
+          @media screen and (max-width: 780px) {
+            a {
+              display: block;
+              text-align: center;
+              padding: 9px 0px;
+            }
+          }
+
+          .logo {
+            color: #ffffff;
+            font-family: $m-bold;
+            font-size: 24px;
+          }
+        }
+      }
+      @media screen and (max-width: 780px) {
+        .header-nav {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 780px) {
+    .header-top {
+      display: block;
+      text-align: center;
+      margin: 0px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      background: #ff4b64eb;
+    }
+  }
+  .header-title {
+
+    padding-top: 170px;
+
+    .h1 {
+      color: #ffffff;
+      font-family: $m-medium;
+      text-align: center;
+      font-size: 72px;
+      font-weight: 500;
+      letter-spacing: 0.8px;
+      padding: 37px 10px;
+      white-space: nowrap;
+    }
+    @media screen and (max-width: 1100px) {
+      .h1 {
+        font-size: 62px;
+      }
+    }
+    @media screen and (max-width: 980px) {
+      .h1 {
+        font-size: 52px;
+        padding: 30px 0px;
+      }
+    }
+    @media screen and (max-width: 780px) {
+      .h1 {
+        font-size: 42px;
+        padding: 30px 0px;
+      }
+    }
+    @media screen and (max-width: 780px) {
+      .h1 {
+        font-size: 32px;
+        padding: 30px 0px;
+        white-space: pre-wrap;
+      }
+    }
+    .title-bottom {
+      font-size: 30px;
+      font-weight: 400;
+      font-family: $m-regular;
+      letter-spacing: 0.75px;
+      color: #fff;
+      text-align: center;
+    }
+    @media screen and (max-width: 780px) {
+      .title-bottom {
+        font-size: 25px;
+      }
+    }
+  }
+  .header-right {
+    margin-top: 30px;
+
+    .login {
+     display: inline-block;
+      width: 120px;
+      height: 40px;
+      color: #ffffff;
+      font-family: $m-medium;
+      font-size: 16px;
+      line-height: 37px;
+      border: 1px solid #ffffff;
+      border-radius: 5px;
+      text-align: center;
+    }
+  }
+}
+
+.form-top {
+  .form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -27px;
+
+    .input-text {
+      max-width: 336px;
+      width: 100%;
+      height: 55px;
+      text-indent: 23px;
+      border: 1px solid #e6e6e6;
+    }
+    @media screen and (max-width: 1130px) {
+      .input-text {
+        max-width: 70%;
+      }
+    }
+    .date {
+      max-width: 186px;
+      text-indent: 33px;
+      border: 1px solid #e6e6e6;
+      width: 100%;
+      height: 55px;
+    }
+    @media screen and (max-width: 1130px) {
+      .date {
+        max-width: 70%;
+      }
+    }
+    .search {
+      width: 120px;
+      height: 55px;
+      cursor: pointer;
+      background-color: #ff4b64;
+      color: #ffffff;
+      border: none;
+      color: #ffffff;
+      font-family: $m-regular;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+    }
+    @media screen and (max-width: 1130px) {
+      .search {
+        width: 70%;
+      }
+    }
+    ::-webkit-input-placeholder {
+      color: #818181;
+      font-family: $m-regular;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27.5px;
+    }
+    ::-moz-placeholder {
+      color: #818181;
+      font-family: $m-regular;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27.5px;
+    }/* Firefox 19+ */
+    :-moz-placeholder {
+      color: #818181;
+      font-family: $m-regular;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27.5px;
+    }/* Firefox 18- */
+    :-ms-input-placeholder {
+      color: #818181;
+      font-family: $m-regular;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27.5px;
+    }
+
+  }
+  @media screen and (max-width: 1130px) {
+    .form {
+      margin-top: -109px;
+    }
+  }
+
+}
+
+.flights {
+  width: 100%;
+
+  .flights-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 75px;
+
+    .flights-title {
+      color: #484848;
+      font-family: $m-regular;
+      font-size: 30px;
+      font-weight: 400;
+    }
+    @media screen and (max-width: 580px) {
+      .flights-title {
+        padding-bottom: 20px;
+      }
+    }
+    .flights-menu {
+
+      .menu-right {
+        display: flex;
+
+        li {
+          a {
+             color: #484848;
+             font-family: $m-medium;
+             font-size: 16px;
+             font-weight: 500;
+            padding: 0px 29px;
+
+            &:last-child {
+              padding-right: 0px;
+            }
+
+            &:hover {
+              color: $global-red;
+            }
+            &:active {
+              color: $global-red;
+            }
+            &:focus {
+              color: $global-red;
+            }
+           }
+          @media screen and (max-width: 620px) {
+            a {
+              padding: 0px;
+              display: block;
+              margin: 8px 0px;
+            }
+          }
+
+        }
+
+      }
+      @media screen and (max-width: 620px) {
+        .menu-right {
+          flex-direction: column;
+        }
+      }
+
+    }
+  }
+  @media screen and (max-width: 620px) {
+    .flights-content {
+      flex-direction: column;
+      margin-top: 45px;
+    }
+  }
+  .airline {
+    margin-top: 60px;
+
+    .airline-title {
+
+      .airline-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #e6e6e6;
+        padding-bottom: 36px;
+        .airline-price {
+          margin-right: 78px;
+        }
+        @media screen and (max-width: 620px) {
+          .airline-price {
+            margin: 8px 0px;
+          }
+        }
+
+        .airline-text {
+          color: #484848;
+          font-family: $m-medium;
+          font-size: 16px;
+        }
+        @media screen and (max-width: 620px) {
+          .airline-text {
+            margin: 8px 0px;
+          }
+        }
+        ul {
+          display: inherit;
+
+          li {
+            color: #484848;
+            font-family: $m-medium;
+            font-size: 16px;
+          }
+          @media screen and (max-width: 620px) {
+            li {
+              margin: 8px 0px;
+            }
+          }
+          li:nth-child(1) {
+            width: 125px;
+            margin-left: 57px;
+          }
+
+          li:nth-child(2) {
+            width: 125px;
+            padding-left: 34px;
+          }
+
+          li:nth-child(3) {
+            width: 125px;
+            padding-left: 82px;
+          }
+
+          li:nth-child(4) {
+            width: 125px;
+            padding-left: 99px;
+          }
+          @media screen and (max-width: 980px) {
+            li:nth-child(1) {
+              width: auto;
+              margin-left: 0px;
+            }
+            li:nth-child(2) {
+              width: auto;
+              margin-left: 0px;
+            }
+            li:nth-child(3) {
+              width: auto;
+              padding-left: 40px;
+            }
+            li:nth-child(4) {
+              width: auto;
+              padding-left: 40px;
+            }
+          }
+          @media screen and (max-width: 980px) {
+            li:nth-child(3) {
+              padding-left: 0px;
+            }
+            li:nth-child(4) {
+              padding-left: 0px;
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 620px) {
+        .airline-items {
+          display: block;
+          text-align: center;
+        }
+      }
+      .airline-table {
+        margin-top: 51px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #e6e6e6;
+        padding-bottom: 44px;
+        text-align: center;
+        flex-wrap: wrap;
+
+        .airline-img {
+          display: inherit;
+          max-width: 155px;
+          width: 100%;
+
+          ul {
+            margin-left: 30px;
+
+            .airline-table-text {
+              color: #484848;
+              font-family: $m-regular;
+              font-size: 16px;
+            }
+            .airline-table-grey {
+              color: #9a9a9a;
+              font-family: $m-regular;
+              font-size: 16px;
+              font-weight: 400;
+              padding-top: 10px;
+            }
+          }
+          @media screen and (max-width: 890px) {
+            ul {
+              margin-left: 0px;
+              margin-top: 15px;
+            }
+          }
+        }
+        @media screen and (max-width: 890px) {
+          .airline-img {
+            display: inline-block;
+            margin-bottom: 30px;
+            margin-left: 0px;
+            flex-grow: 1;
+          }
+        }
+        .airline-block-center {
+          display: inherit;
+          max-width: 560px;
+          width: 100%;
+          height: auto;
+
+          ul {
+
+            &:nth-child(1) {
+              padding: 0px 50px 0px 9px;
+            }
+            @media screen and (max-width: 620px) {
+              &:nth-child(1) {
+                padding: 0px 9px;
+              }
+            }
+            &:nth-child(2) {
+              padding: 0px 30px;
+            }
+            @media screen and (max-width: 620px) {
+              &:nth-child(2) {
+                padding: 0px 9px;
+              }
+            }
+            &:nth-child(3) {
+              padding: 0px 55px;
+            }
+            @media screen and (max-width: 620px) {
+              &:nth-child(3) {
+                padding: 0px 9px;
+              }
+            }
+            &:nth-child(4) {
+              padding: 0px 8px;
+            }
+
+            .airline-table-text {
+              color: #484848;
+              font-family: $m-regular;
+              font-size: 16px;
+            }
+            .airline-table-grey {
+              color: #9a9a9a;
+              font-family: $m-regular;
+              font-size: 16px;
+              font-weight: 400;
+              padding-top: 10px;
+            }
+          }
+        }
+        @media screen and (max-width: 890px) {
+          .airline-block-center {
+            flex-grow: 1;
+            width: auto;
+            margin-bottom: 20px;
+          }
+        }
+      }
+      @media screen and (max-width: 890px) {
+        .airline-table {
+          flex-direction: column;
+        }
+      }
+      .price-block {
+
+        .price-btn {
+          display: inline-block;
+          width: 120px;
+          height: 40px;
+          color: $global-red;
+          font-family: $m-medium;
+          font-size: 16px;
+          line-height: 37px;
+          border: 1px solid $global-red;
+          border-radius: 5px;
+          text-align: center;
+          margin-right: -2px;
+        }
+      }
+      @media screen and (max-width: 620px) {
+        .price-block {
+          flex-grow: 1;
+        }
+      }
+      .see-flights {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        margin-top: 43px;
+
+        .seeall {
+          color: #484848;
+          font-family: $m-regular;
+          font-size: 16px;
+        }
+      }
+      @media screen and (max-width: 1100px) {
+        .see-flights {
+          position: relative;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 620px) {
+    .airline {
+      margin-top: 30px;
+    }
+  }
+}
+
+.hotels {
+  position: relative;
+
+  .hotels-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 134px;
+
+    .hotels-title {
+      color: #484848;
+      font-family: $m-regular;
+      font-size: 30px;
+      font-weight: 400;
+    }
+    .hotels-menu {
+
+      .menu-right {
+        display: flex;
+
+        li {
+          a {
+            color: #484848;
+            font-family: $m-medium;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 0px 29px;
+
+            &:last-child {
+              padding-right: 0px;
+            }
+
+            &:hover {
+              color: $global-red;
+            }
+            &:active {
+              color: $global-red;
+            }
+            &:focus {
+              color: $global-red;
+            }
+          }
+          @media screen and (max-width: 340px) {
+            a {
+              padding: 0px 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1110px) {
+    .hotels-content {
+      justify-content: center;
+    }
+  }
+
+  .hotels-portfolio {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 29px;
+
+    .portfolio-item {
+
+      border: 1px solid #e6e6e6;
+      max-width: 350px;
+      margin-top: 30px;
+
+      .portfolio-title {
+        color: #484848;
+        font-family: $m-medium;
+        font-size: 16px;
+        font-weight: 500;
+        padding-top: 20px;
+        margin-left: 16px;
+      }
+      .block-text-grey {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        margin-left: 16px;
+
+        .text-km {
+          color: #9a9a9a;
+          font-family: $m-regular;
+          font-size: 16px;
+          font-weight: 400;
+          margin-right: 11px;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 200px;
+      }
+      .price-block {
+        margin: 20px 0px 25px 15px;
+
+        .price-btn {
+          display: inline-block;
+          width: 120px;
+          height: 40px;
+          color: $global-red;
+          font-family: $m-medium;
+          font-size: 16px;
+          line-height: 37px;
+          border: 1px solid $global-red;
+          border-radius: 5px;
+          text-align: center;
+        }
+      }
+    }
+    @media screen and (max-width: 1110px) {
+      .portfolio-item {
+        margin: 10px 15px;
+      }
+    }
+  }
+  @media screen and (max-width: 1110px) {
+    .hotels-portfolio {
+      justify-content: center;
+    }
+  }
+  .see-flights {
+
+    margin-top: 40px;
+    position: absolute;
+    right: 0px;
+
+    .seeall {
+      color: #484848;
+      font-family: $m-regular;
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .see-flights {
+      position: relative;
+      margin-top: 20px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.atractions {
+  .atractions-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 132px;
+    .atractions-title {
+      color: #484848;
+      font-family: $m-regular;
+      font-size: 30px;
+      font-weight: 400;
+    }
+    @media screen and (max-width: 850px) {
+      .atractions-title {
+        margin-bottom: 10px;
+      }
+    }
+    .atractions-menu {
+      .menu-right {
+        display: flex;
+
+        li {
+          a {
+            color: #484848;
+            font-family: $m-medium;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 0px 27px;
+
+            &:last-child {
+              padding-right: 0px;
+            }
+            &:hover {
+              color: $global-red;
+            }
+            &:active {
+              color: $global-red;
+            }
+            &:focus {
+              color: $global-red;
+            }
+          }
+          @media screen and (max-width: 850px) {
+            a {
+              display: block;
+              padding: 8px 0px;
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 850px) {
+        .menu-right {
+          display: block;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 850px) {
+    .atractions-content {
+      flex-direction: column;
+      margin-top: 50px;
+    }
+  }
+  .atractions-portfolio {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 59px;
+    position: relative;
+
+    .atractions-item {
+      .item-img {
+        position: relative;
+        max-width: 350px;
+        height: 525px;
+      }
+    }
+    @media screen and (max-width: 1140px) {
+      .atractions-item {
+        margin-bottom: 30px;
+      }
+    }
+    .images-right {
+      .atractions-item-right {
+        position: relative;
+        max-width: 730px;
+        height: 247px;
+      }
+      @media screen and (max-width: 780px) {
+        .atractions-item-right {
+          height: auto;
+        }
+      }
+      .atractions-item-bottom {
+        position: relative;
+        max-width: 730px;
+        height: 247px;
+        margin: 30px 0px 0px 0px;
+      }
+      @media screen and (max-width: 780px) {
+        .atractions-item-bottom {
+          height: auto;
+          margin: 20px 0px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1140px) {
+    .atractions-portfolio {
+      justify-content: center;
+    }
+  }
+
+  .atractions-text-center {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    top: 48.5%;
+    position: absolute;
+    font-family: $m-medium;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1.6px;
+  }
+  .atractions-portfolio-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .images-bottom {
+      max-width: 350px;
+      height: 260px;
+      margin: 30px 0px;
+      position: relative;
+
+      &:last-child {
+        margin-left: 0px;
+      }
+    }
+    @media screen and (max-width: 1100px) {
+      .images-bottom {
+        margin: 20px 17px;
+      }
+    }
+    @media screen and (max-width: 580px) {
+      .images-bottom {
+        margin: 20px 0px;
+        height: auto;
+      }
+    }
+  }
+  .see-flights {
+
+    margin-top: 12px;
+    position: absolute;
+    right: 2px;
+
+    .seeall {
+      color: #484848;
+      font-family: $m-regular;
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .see-flights {
+      position: relative;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    .atractions-portfolio {
+      justify-content: center;
+    }
+    .atractions-portfolio-bottom {
+      justify-content: center;
+    }
+  }
+}
+
+.trips {
+  .trips-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 108px;
+
+    .trips-title {
+      color: #484848;
+      font-family: $m-regular;
+      font-size: 30px;
+      font-weight: 400;
+    }
+    .trips-menu {
+
+      .menu-right {
+        display: flex;
+
+        li {
+          a {
+            color: #484848;
+            font-family: $m-medium;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 0px 29px;
+
+            &:last-child {
+              padding-right: 0px;
+            }
+
+            &:hover {
+              color: $global-red;
+            }
+            &:active {
+              color: $global-red;
+            }
+            &:focus {
+              color: $global-red;
+            }
+          }
+          @media screen and (max-width: 340px) {
+            a {
+              padding: 0px 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 980px) {
+    .trips-content {
+      justify-content: center;
+    }
+  }
+  .trips-article {
+    width: 100%;
+    position: relative;
+    margin-top: 64px;
+    .article-item {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+
+      .block-article {
+        border: 1px solid #e6e6e6;
+        padding: 25px 42px 41px 30px;
+
+        .article-title {
+          color: #484848;
+          font-family: $m-medium;
+          font-size: 16px;
+          font-weight: 500;
+          margin-bottom: 30px;
+        }
+        .article-text {
+          color: #484848;
+          font-family: $m-regular;
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+    }
+    @media screen and (max-width: 980px) {
+      .article-item {
+        max-width: 350px;
+        flex-direction: column;
+        margin: 20px auto;
+      }
+    }
+  }
+  .see-flights {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    margin-top: 13px;
+
+    .seeall {
+      color: #484848;
+      font-family: $m-regular;
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .see-flights {
+      position: relative;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.empty {
+  height: 191px;
+}
+
+.footer {
+  min-height: 80px;
+  margin-top: -80px;
+  width: 100%;
+  background: #ffffff;
+  position: relative;
+
+  .block-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .footer-block-item {
+      .footer-title {
+        color: #484848;
+        font-family: $m-regular;
+        font-size: 30px;
+      }
+      .footer-link {
+        margin-top: 52px;
+        li {
+          margin-bottom: 26px;
+          a {
+            color: #484848;
+            font-family: $m-regular;
+            font-size: 16px;
+          }
+          .link-email {
+            color: #ff4b64;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 680px) {
+    .block-footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}
+
+
+/* Burgers menu */
+
+// Burger menu button
+$burger--thickness: 4px;
+.burger {
+  $width: 28px;
+
+  display: none;
+  border: 0;
+  background: none;
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+
+  border-bottom: $burger--thickness solid #fff;
+  width: $width;
+
+  transition: border-bottom 1s ease-in-out;
+  -webkit-transition: border-bottom 1s ease-in-out;
+
+  // Fix for extra space in Firefox
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    border-bottom: $burger--thickness solid #fff;
+    width: 100%;
+    margin-bottom: 5px;
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    border-bottom: $burger--thickness solid #fff;
+    width: 100%;
+    margin-bottom: 5px;
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  }
+}
+@media screen and (max-width: 780px) {
+  .burger {
+    display: inline-block;
+    z-index: 100;
+    position: absolute;
+    top: 25px;
+  }
+}
+
+.burger-check {
+  display: none;
+}
+
+.burger-check:checked ~ .burger {
+  border-bottom: $burger--thickness solid transparent;
+  transition: border-bottom 0.8s ease-in-out;
+  -webkit-transition: border-bottom 0.8s ease-in-out;
+
+  &:before {
+    transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  }
+
+  &:after {
+    transform: rotate(405deg) translateY(-4px) translateX(-5px);
+    -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  }
+}
+
+// * * * Navigation * * *
+$navigation__transition: max-height 0.5s ease-in-out;
+
+.header-top {
+
+  transition: $navigation__transition;
+}
+
+@media screen and (max-width: 780px) {
+  .header-top {
+    overflow: hidden;
+    height: 0;
+  }
+}
+
+.burger-check:checked ~ .header-top {
+  height: 689px;
+
+  transition: $navigation__transition;
+}
+
+/* End Burgers menu */
